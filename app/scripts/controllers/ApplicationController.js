@@ -208,7 +208,8 @@ angular.module('mpk').controller('ApplicationController',
 		kanbanRepository.save();
 	}, true);
 
-	$scope.columnHeight = angular.element($window).height() - 110;
+	$scope.mincolumnHeight = angular.element($window).height() / 5;
+	$scope.maxcolumnHeight = angular.element($window).height() - 110;
 	$scope.columnWidth = calculateColumnWidth($scope.kanban.columns.length);
 
 	$scope.triggerOpen = function(){
