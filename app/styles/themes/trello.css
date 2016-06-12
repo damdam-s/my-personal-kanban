@@ -1,3 +1,5 @@
+#quickSwitch {padding: 0px !important; }
+
 .clearfix
 {
 	zoom: 1;
@@ -933,10 +935,7 @@ pre code
 	max-height: 340px;
 	overflow-y: scroll;
 }
-form
-{
-	margin: 0 0 20px;
-}
+
 fieldset
 {
 	border: 0;
@@ -981,8 +980,6 @@ select,textarea,input[type=text],input[type=password],input[type=datetime],input
 	color: #555;
 	display: inline-block;
 	font-size: 14px;
-	height: 20px;
-	line-height: 20px;
 	margin-bottom: 10px;
 	padding: 4px 6px;
 	vertical-align: middle;
@@ -3671,26 +3668,11 @@ button.btn.btn-mini,input[type=submit].btn.btn-mini
 }
 .modal-backdrop,.modal-backdrop.fade.in
 {
-	filter: alpha(opacity=80);
-	opacity: .8;
-	webkit-filter: alpha(opacity=80);
+	filter: alpha(opacity=50);
+	opacity: .5;
+	webkit-filter: alpha(opacity=50);
 }
-.modal
-{
-	background-clip: padding-box;
-	background-color: #fff;
-	border: 1px solid #999;
-	border: 1px solid rgba(0,0,0,.3);
-	border-radius: 6px;
-	box-shadow: 0 3px 7px rgba(0,0,0,.3);
-	left: 50%;
-	margin-left: -280px;
-	outline: 0;
-	position: fixed;
-	top: 10%;
-	width: 560px;
-	z-index: 1050;
-}
+
 .modal.fade
 {
 	top: -25%;
@@ -3717,7 +3699,6 @@ button.btn.btn-mini,input[type=submit].btn.btn-mini
 }
 .modal-body
 {
-	max-height: 400px;
 	overflow-y: auto;
 	padding: 15px;
 	position: relative;
@@ -5592,21 +5573,10 @@ a.label:hover,a.label:focus,a.badge:hover,a.badge:focus
 	{
 		padding-top: 0;
 	}
-	.navbar-fixed-top,.navbar-fixed-bottom
-	{
-		position: static;
-	}
-	.navbar-fixed-top
-	{
-		margin-bottom: 20px;
-	}
+	
 	.navbar-fixed-bottom
 	{
 		margin-top: 20px;
-	}
-	.navbar-fixed-top .navbar-inner,.navbar-fixed-bottom .navbar-inner
-	{
-		padding: 5px;
 	}
 	.navbar .container
 	{
@@ -5771,9 +5741,9 @@ a
 }
 .card
 {
-	width: 90%;
+	width: 100%;
 	border: solid 1px #b9b9b9;
-	border-radius: 3px;
+	border-radius: 5px;
 	font-weight: 200;
 	list-style: none;
 	padding: 6px 8px 5px 10px;
@@ -5802,21 +5772,21 @@ a
 }
 .column
 {
-	max-width: 30%;
 	background-color: #e3e3e3;
-	border-radius: 3px;
-	border-top: solid 2px #ffffff;
-	border-right: solid 2px #ffffff;
-	box-shadow: rgba(0,0,0,.0980392) 0 1px 10px 0;
-	margin-left: 10px;
-	padding-left: 10px;
+    border-radius: 5px;
+    border-top: solid 1px #ffffff;
+    border-right: solid 1px #ffffff;
+    box-shadow: rgba(0,0,0,0.5) 0px 5px 10px;
+    margin-top: 55px;
+    margin-left: 10px;
+    padding: 10px;
+	min-height: 84px;
 }
 .columnHeader
 {
 	color: #333333;
 	font-weight: bold;
 	font-size: 15px;
-	margin: 10px 0;
 	padding: 0 3px;
 }
 .noMargin
