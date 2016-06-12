@@ -9,5 +9,4 @@ stories_*
 node_modules/
 app/bower_modules/
 .tmp/
-dist/
 npm-*.log
