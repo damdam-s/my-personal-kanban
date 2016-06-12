@@ -5,9 +5,10 @@ This project is forked from My Personal Kanban, is a small and simple in-browser
 
 * ToDo:
 
-    - [ ] Page Title on Kanban change
-    - [ ] Change card colours
-    - [ ] Fix Trello Theme / Create new ones
-    - [ ] Translation
-    - [ ] Add tags
-    - [ ] Card Markdown
+    - [ ] Page Title on kanban change;
+    - [ ] Change card colours (?);
+    - [x] Fix Trello Theme / Create new ones;
+    - [x] Reduce default size of the cards and stick them to the top;
+	- [ ] Translation;
+    - [ ] Add tags;
+    - [ ] Card Markdown;
