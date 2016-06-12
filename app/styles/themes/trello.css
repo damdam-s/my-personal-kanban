@@ -1,5 +1,7 @@
 #quickSwitch {padding: 0px !important; }
 
+
+
 .clearfix
 {
 	zoom: 1;
@@ -4544,6 +4546,11 @@ a.label:hover,a.label:focus,a.badge:hover,a.badge:focus
 }
 @media (max-width:767px)
 {
+	.navbar-header
+	{
+		float: left;
+	}
+	
 	.hidden-desktop
 	{
 		display: inherit!important;
@@ -5382,11 +5389,13 @@ a.label:hover,a.label:focus,a.badge:hover,a.badge:focus
 	{
 		padding-left: 20px;
 		padding-right: 20px;
+		min-width: 600px;
 	}
 	.navbar-fixed-top,.navbar-fixed-bottom,.navbar-static-top
 	{
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: 0px;
+		margin-right: 0px;
+		min-width: 600px;
 	}
 	.container-fluid
 	{
