@@ -71,7 +71,7 @@
               <li><a ng-click="cloudMenu.openCloudSetup()" href=""><i class="glyphicon glyphicon-wrench"></i> Setup</a></li>
               <li><a ng-click="cloudMenu.upload()" href=""><i class="glyphicon glyphicon-upload"></i> Upload</a></li>
               <li><a ng-click="cloudMenu.download()" href=""><i class="glyphicon glyphicon-download"></i> Download</a></li>
-              <li><a href="http://localhost:8080/" target="blank"><i class="glyphicon glyphicon-hand-right"></i> Go to Cloud</a></li>
+              <li><a ng-href="{{cloudMenu.currentCloud}}" target="blank"><i class="glyphicon glyphicon-hand-right"></i> Go to Cloud</a></li>
             </ul>
           </li>
         </ul>

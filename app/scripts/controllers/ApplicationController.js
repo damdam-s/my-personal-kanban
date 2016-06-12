@@ -74,6 +74,9 @@ angular.module('mpk').controller('ApplicationController',
 	$scope.cloudMenu.openCloudSetup = function(){
 		$scope.$broadcast('OpenCloudSetup');
 	};
+	
+	$scope.cloudMenu.currentCloud = cloudService.cloudAddress;
+	
 	$scope.cloudMenu.upload = function(){
 		if (!cloudService.isConfigurationValid()){
 			return $scope.openCloudSetup(true);
