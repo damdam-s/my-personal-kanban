@@ -2014,10 +2014,7 @@ table td[class*=span],table th[class*=span],.row-fluid table td[class*=span],.ro
 	transition: opacity .15s linear;
 	webkit-transition: opacity .15s linear;
 }
-.fade.in
-{
-	opacity: 1;
-}
+
 .collapse
 {
 	height: 0;
@@ -3652,37 +3649,9 @@ button.btn.btn-mini,input[type=submit].btn.btn-mini
 	color: #999;
 	cursor: default;
 }
-.modal-backdrop
-{
-	background-color: #000;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1040;
-}
-.modal-backdrop.fade
-{
-	opacity: 0;
-}
-.modal-backdrop,.modal-backdrop.fade.in
-{
-	filter: alpha(opacity=50);
-	opacity: .5;
-	webkit-filter: alpha(opacity=50);
-}
 
-.modal.fade
-{
-	top: -25%;
-	transition: opacity .3s linear,top .3s ease-out;
-	webkit-transition: opacity .3s linear,top .3s ease-out;
-}
-.modal.fade.in
-{
-	top: 10%;
-}
+
+
 .modal-header
 {
 	border-bottom: 1px solid #eee;
