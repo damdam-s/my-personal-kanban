@@ -1022,7 +1022,7 @@ select,input[type=file]
 {
 	height: 30px;
 	line-height: 30px;
-	margin-top: 4px;
+	margin-top: 10px;
 }
 select
 {
@@ -3214,7 +3214,7 @@ button.btn.btn-mini,input[type=submit].btn.btn-mini
 {
 	color: #777;
 	float: none;
-	padding: 10px 15px;
+	padding: 15px 15px;
 	text-decoration: none;
 }
 .navbar .nav .dropdown-toggle .caret
