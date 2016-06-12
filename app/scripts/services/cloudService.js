@@ -2,7 +2,7 @@
 
 angular.module('mpk').factory('cloudService', function($http, $log, $q, $timeout, cryptoService) {
 	return {
-		cloudAddress: 'http://localhost:8080',
+		cloudAddress: 'https://my-personal-kanban.appspot.com/',
 		settings: {notLoaded: true, encryptionKey: 'my-random-key'},
 		
 		loadSettings: function() {
