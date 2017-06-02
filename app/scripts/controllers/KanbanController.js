@@ -12,6 +12,10 @@ angular.module('mpk').controller('KanbanController', function KanbanController($
 		}
 	};
 
+	$scope.hasDetails = function(card){
+		return card.details !== undefined && card.details !== '';
+	};
+
 	$scope.openCardDetails = function(card){
 		$scope.$broadcast('OpenCardDetails', card);
 	};
