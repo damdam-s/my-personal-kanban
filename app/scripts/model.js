@@ -25,9 +25,11 @@ function KanbanColumn(name, settings){
 	};
 }
 
-function KanbanCard(name, details, color){
+function KanbanCard(name, details, color, customer, due_date){
 	this.name = name;
 	this.details = details;
 	this.color = color;
+	this.customer = customer;
+	this.due_date = due_date;
 	return this;
 }
