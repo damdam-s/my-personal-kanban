@@ -106,6 +106,10 @@
                     <a class="pull-right" ng-click="delete(card, column)"><i class="glyphicon glyphicon-remove"></i></a>
                     <a class="pull-right" title="Archive" ng-click="archive(kanban, column, card)" ng-show="isLastColumn(column.name, kanban)"><i class="glyphicon glyphicon-folder-close"></i></a>
                     <a ng-click="openCardDetails(card)"><span>{{card.name}}</span></a>
+                    <div class="cardBottom">
+                        <div style="text-align:center;font-size:9pt;"><span ng-show="card.customer" >Customer: </span><strong>{{card.customer}}</strong></div>
+                        <div style="text-align:center;font-size:9pt;"><span ng-show="card.due_date" >Due on: </span><strong>{{ card.due_date | date:"yyyy-MM-dd"}}</strong></div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -211,6 +215,30 @@
                   <div class="input-group">
                     <div class="form-control cardDetails cardInputs" ng-show="!editingDetails" ng-bind-html="card.details|linky|cardDetails"></div>
                     <textarea id="details" ng-model="card.details" class="cardInputs form-control" rows="7" ng-show="editingDetails"></textarea>
+                    <span class="input-group-btn">
+                      <a title="OK" ng-click="editingDetails = false" ng-hide="!editingDetails" class="btn btn-default"><i class="glyphicon glyphicon-ok"></i></a>
+                      <a title="Edit card details" ng-click="editingDetails = true" ng-hide="editingDetails" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                    </span>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label" for="cardTitle">Customer</label>
+              <div class="controls">
+                  <div class="input-group">
+                    <input name="cardCustomer" type="text" id="card_customer" placeholder="Customer on a card" ng-model="card.customer" class="form-control" ng-disabled="!editingDetails" />
+                    <span class="input-group-btn">
+                      <a title="OK" ng-click="editingDetails = false" ng-hide="!editingDetails" class="btn btn-default"><i class="glyphicon glyphicon-ok"></i></a>
+                      <a title="Edit card details" ng-click="editingDetails = true" ng-hide="editingDetails" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                    </span>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label" for="cardTitle">Due Date</label>
+              <div class="controls">
+                  <div class="input-group">
+                    <input name="cardDuedate" type="date" id="card_due_date" ng-model="card.due_date" class="form-control" ng-disabled="!editingDetails" />
                     <span class="input-group-btn">
                       <a title="OK" ng-click="editingDetails = false" ng-hide="!editingDetails" class="btn btn-default"><i class="glyphicon glyphicon-ok"></i></a>
                       <a title="Edit card details" ng-click="editingDetails = true" ng-hide="editingDetails" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
